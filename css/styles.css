@@ -1,11 +1,60 @@
+/*colores y tipografía*/
 :root {
+--black: rgb(34,34,34);
+--orange: rgb(233,164,0);
+--red: rgb(214,40,40);
+--beige: rgb(242,239,234);
+--ocre: rgb(201,140,0);
+--white: rgb(255,255,255);
+--font: 'Fira sans', sans-serif;
+}
 
+/*general*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url("../img/bg-homee.jpg");
+    background-image: url("../img/bg-home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: top;  
+    font-family: var(--font);
 }
 
+h1 {
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--ocre);
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+/*index*/
+.and {
+    color: var(--ocre);
+}
