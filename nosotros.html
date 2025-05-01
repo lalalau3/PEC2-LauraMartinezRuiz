@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap" rel="stylesheet">        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="img/favicon.png" type="image/png">
         <title>Cine y Letras | ¿Quién somos?</title> 
         <meta name="description" content="Explica qué se hace en este club de lectura, donde pueden suscribirse y donde pueden contactar con la empresa.">
@@ -13,8 +14,8 @@
 
     <body>
         <header>
-            <h1><a href="index.html">cine<span class="and">&amp;</span>letras</a></h1>
-
+            <h1><a href="index.html">cine<span class="and">letras</span></a></h1>
+            <hr>
             <nav>
                 <ul>
                 <li class=""><a href="nosotros.html" class="pag-actual">Nosotros</a></li><!--poner la clase y luego en css poner la clase o directamente quizas con nav ul li si no se hacen otras igual pero a lo mejoer sera mejor una clase y poner pagina actual como en pec1-->
@@ -22,6 +23,7 @@
                 <li><a href="formulario.html">Hazte socio</a></li>
                 </ul>
             </nav>
+            <hr>
         </header>
 
         <main class="container">
@@ -63,9 +65,9 @@
                     
                     <p>Cine y literatura en tu correo: análisis, debates y recomendaciones.</p>
                 
-                    <form action="#">
+                    <form action="#" method="post">
                         <div>
-                        <label for="Nombre">Nombre</label>
+                        <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" required>
                         </div>
                     
@@ -158,20 +160,23 @@
                             <li>La selección es realizada por el equipo de curadores de contenidos de 
                                 <b>Cine y letras</b> y con las sugerencias de los participantes y miembros del 
                                 club.</li>
-                        </ul></li>
+                        </ul>
+                    </li>
                     <li>Análisis de la obra literaria
                         <ul>
                             <li>Se proponen sesiones de lectura guiada para trabajar el contexto,
                                 personajes y temas principales.</li>
                             <li>Se plantean preguntas clave para propiciar la reflexión y el debate.</li>
-                        </ul></li>
+                        </ul>
+                    </li>
                     <li> Visionado de la adaptación cinematográfica
                         <ul>
                             <li>Se propone ver la película o la serie de forma individual antes del
                                 debate.</li>
                             <li>Se programan sesiones de visionado grupal para analizar los cambios 
                                 narrativos, el lenguaje cinematográfico y las decisiones de dirección.</li>
-                        </ul></li>
+                        </ul>
+                    </li>
                     <li>Debate y conclusiones
                         <ul>
                             <li>Se contrastan las diferencias entre la obra literaria y su adaptación, 
@@ -181,7 +186,8 @@
                                 a futuros miembros.</li>
                             <li>Los participantes proponen nuevas obras para los próximos ciclos de 
                                 análisis.</li>
-                        </ul></li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
 
@@ -197,11 +203,12 @@
         </main>
     
         <footer>
+            <hr>
             <p><abbr title="Universitat Oberta de Catalunya">UOC</abbr>, Mayo de 2025. Laura Martínez Ruiz</p>
     
             <p><a href="">Aviso legal</a>
                 <a href="">Política de privacidad</a>
-                <a href="">Política de cookies</a>
+                <a href="">Política de <span lang="en">cookies</span></a>
             </p>
         </footer>
         
