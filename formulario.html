@@ -19,15 +19,123 @@
             <nav>
                 <ul>
                  <li class=""><a href="nosotros.html">Nosotros</a></li>
-                 <li><a href="actividades.html">Actividades</a></li><!--poner la clase y luego en css poner la clase o directamente quizas con nav ul li si no se hacen otras igual pero a lo mejoer sera mejor una clase y poner pagina actual como en pec1-->
-                 <li><a href="formulario.html" class="pag-actual">Hazte socio</a></li>
+                 <li><a href="actividades.html">Actividades</a></li>
+                 <li><a href="formulario.html" class="pag-actual">Hazte socio</a></li> <!--poner la clase y luego en css poner la clase o directamente quizas con nav ul li si no se hacen otras igual pero a lo mejoer sera mejor una clase y poner pagina actual como en pec1-->
                  </ul>
             </nav>
             <hr>
         </header>
         
         <main>
+            <section>
+                <h2>Sé parte de Cine y letras</h2>
+        
+                <p>Un libro, una película, un debate... ¡únete!</p>
+              </section>
 
+              <p>Los campos señalados con <span class="required">*</span> son obligatorios.</p>
+
+              <form>
+                <fieldset>
+                  <legend class="section-title">DATOS PERSONALES</legend>
+                  <label>Nombre <span class="required">*</span></label>
+                  <input type="text" required>
+                  
+                  <label>Apellidos <span class="required">*</span></label>
+                  <input type="text" required>
+                  
+                  <label>Correo electrónico <span class="required">*</span></label>
+                  <input type="email" required>
+                  
+                  <label>Teléfono de contacto</label>
+                  <input type="text">
+                  
+                  <label>Fecha de nacimiento <span class="required">*</span></label>
+                  <input type="date" required>
+                </fieldset>
+            
+                <fieldset>
+                  <legend class="section-title">CUOTA Y DATOS BANCARIOS</legend>
+                  <label>Tipo de cuota de socio <span class="required">*</span></label>
+                  <select required>
+                    <option value="">Elige una opción</option>
+                    <option value="">Mensual 30 euros</option>
+                    <option value="">Semestral 150 euros</option>
+                    <option value="">Anual 290 euros</option>
+                  </select>
+            
+                  <label>Número de cuenta corriente (IBAN) <span class="required">*</span></label>
+                  <input type="text" required>
+                </fieldset>
+            
+                <fieldset>
+                  <legend class="section-title">PREFERENCIAS LITERARIAS Y CINEMATOGRÁFICAS</legend>
+                  <label>¿Qué haces más a menudo: leer o ver cine?</label>
+                  <select>
+                    <option value="">Elige una opción</option>
+                    <option value="">Leo más que veo cine</option>
+                    <option value="">Veo más cine que leo</option>
+                    <option value="">Equilibro cine y lectura</option>
+                    <option value="">Leo libros y veo cine ocasionalmente</option>
+                  </select>
+            
+                  <div style="display: flex; justify-content: space-between;">
+                    <div>
+                      <label><strong>Géneros literarios preferidos</strong></label>
+                      <div class="checkbox-group">
+                        <label><input type="checkbox"> Novela contemporánea</label>
+                        <label><input type="checkbox"> Novela histórica</label>
+                        <label><input type="checkbox"> Novela gráfica</label>
+                        <label><input type="checkbox"> Ciencia ficción</label>
+                        <label><input type="checkbox"> Terror</label>
+                        <label><input type="checkbox"> Misterio y novela negra</label>
+                        <label><input type="checkbox"> Romántica</label>
+                        <label><input type="checkbox"> Aventuras</label>
+                      </div>
+                    </div>
+                    <div>
+                      <label><strong>Géneros cinematográficos preferidos</strong></label>
+                      <div class="checkbox-group">
+                        <label><input type="checkbox"> Drama</label>
+                        <label><input type="checkbox"> Comedia</label>
+                        <label><input type="checkbox"> Thriller</label>
+                        <label><input type="checkbox"> Ciencia ficción</label>
+                        <label><input type="checkbox"> Animación</label>
+                        <label><input type="checkbox"> Clásicos</label>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <label><strong>¿Prefieres ver una película/serie basada en un libro antes o después de leer el libro?</strong></label>
+                  <label><input type="radio" name="preferencia" value="antes"> Antes</label>
+                  <label><input type="radio" name="preferencia" value="despues"> Después</label>
+                  <label><input type="radio" name="preferencia" value="indiferente"> Me es indiferente</label>                  
+                </fieldset>
+            
+                <fieldset>
+                  <legend class="section-title">TU INTERÉS Y DISPONIBILIDAD</legend>
+                  <label>¿Cuál es tu motivación para unirte a Cine y letras? <span class="required">*</span></label>
+                  <textarea rows="5" required></textarea>
+            
+                  <label><strong>Disponibilidad para sesiones <span class="required">*</span></strong></label>
+                  <label><input type="radio" name="disponibilidad" required> Entre semana</label>
+                  <label><input type="radio" name="disponibilidad"> Fines de semana</label>
+                  <label><input type="radio" name="disponibilidad"> Ambos</label>
+                </fieldset>
+
+                <p>
+                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE CINE Y LETRAS:
+                    Finalidades: recepción de datos para la inscripción como socio del club CINE Y LETRAS.
+                    Legitimación: consentimiento del interesado. Destinatarios: no se cederán estos datos a terceros, salvo por obligación legal.
+                    Derechos: puede retirar su consentimiento en cualquier momento, así como acceder, rectificar y suprimir sus datos y otros derechos dirigiéndose a info@cineyletras.net.
+                    Información adicional: puede ampliar la información en el enlace de
+                    <a href="">Aviso Legal</a> y <a href="">Política de Privacidad</a>.
+                </p>
+            
+                <label><input type="checkbox" required> He leído y acepto la política de privacidad <span class="required">*</span></label><br><br>
+            
+                <button type="submit">Enviar</button>
+              </form>
         </main>
         
         <footer>
@@ -39,7 +147,6 @@
                 <a href="">Política de <span lang="en">cookies</span></a>
             </p>
         </footer>
-        
     </body>
 </html>
 
