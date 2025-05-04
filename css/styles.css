@@ -27,6 +27,10 @@ body {
     background-repeat: no-repeat;
     background-position: top;  
     font-family: var(--font);
+    text-align: left;
+}
+
+footer{
     text-align: center;
 }
 
@@ -51,12 +55,18 @@ a:hover {
 hr {
     border: none;
     border-top: 1px solid var(--ocre);
-    margin: 0.5rem 0;
-    width: 100%;
+    margin: 0.1rem 3rem 0.1rem 3rem;
+}
+
+.pag-actual {
+    font-weight: 700;
 }
   
-  
 /*header*/
+header {
+    margin-top: 15px;
+}
+
 h1 {
     font-size: 19px;
     font-weight: 700;
@@ -81,33 +91,42 @@ h1 {
     color: var(--ocre);
 }
   
-
 .l-vert {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0.8rem 0;
+}
+  
+.l-vert .nav-menu {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 0;
-    align-items: center;
+    margin: 0 auto;
+    gap: 2rem;
 }
-  
-.l-vert li {
+
+.nav-menu li {
     position: relative;
-    padding: 0 12px;
-}
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+  }
   
-.l-vert li:not(:last-child)::after {
+  .nav-menu li:not(:last-child)::after {
     content: "";
     position: absolute;
     right: 0;
-    top: 20%;        /* Baja un poco desde arriba */
-    height: 60%;     /* Más larga que antes */
+    top: 15%;
+    height: 70%;
     width: 1px;
-    background-color: #c9a74a;
-}   /* Línea vertical más larga y centrada */
+    background-color: var(--ocre);
+  }
+  
+  
+  
 
-header {
-    margin-top: 15px;
-}
   
 
 /*index*/
