@@ -1,4 +1,4 @@
-/*colores y tipografía*/
+   /*colores y tipografía*/
 :root {
 --black: rgb(34,34,34);
 --orange: rgb(233,164,0);
@@ -22,12 +22,14 @@
 }
 
 body {
-    background-image: url("../img/bg-home.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;  
     font-family: var(--font);
     text-align: left;
+    background-color: var(--beige);
+    display: block;
+}
+
+.bg{
+    background: url("../img/bg-home.jpg") top / cover no-repeat fixed;
 }
 
 footer{
@@ -37,10 +39,8 @@ footer{
 .container {
     width: 100%;
     max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin: 0 auto;
+    padding: 0 3rem;
 }
 
 a {
@@ -55,7 +55,7 @@ a:hover {
 hr {
     border: none;
     border-top: 1px solid var(--ocre);
-    margin: 0.1rem 3rem 0.1rem 3rem;
+    margin: 0.2rem 3rem;
 }
 
 .pag-actual {
@@ -68,7 +68,7 @@ header {
 }
 
 h1 {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
 }
@@ -79,10 +79,12 @@ h1 {
     gap: 2rem;
     list-style: none;
     padding: 0;
-    margin: 1rem 0;
+    margin: 2rem 0;
 } /* Navegación horizontal sin viñetas */
   
 .nav-menu a {
+    font-weight: 400;
+    font-size: 15px;
     text-decoration: none;
     color: var(--black);
 }
@@ -105,28 +107,23 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    gap: 2rem;
+    gap: 0.5rem;
 }
 
 .nav-menu li {
     position: relative;
-    text-transform: uppercase;
     padding: 0 0.5rem;
-  }
+}
   
-  .nav-menu li:not(:last-child)::after {
+.nav-menu li:not(:last-child)::after {
     content: "";
     position: absolute;
     right: 0;
     top: 15%;
     height: 70%;
-    width: 1px;
+    width: 1.5px;
     background-color: var(--ocre);
-  }
-  
-  
-  
-
+}
   
 
 /*index*/
