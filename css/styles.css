@@ -1,4 +1,4 @@
-   /*colores y tipografía*/
+/*COLORES Y TIPOGRAFÍA*/
 :root {
 --black: rgb(34,34,34);
 --orange: rgb(233,164,0);
@@ -9,7 +9,8 @@
 --font: 'Fira sans', sans-serif;
 }
 
-/*general*/
+
+/*****GENERAL*****/
 * {
     margin: 0;
     padding: 0;
@@ -28,14 +29,6 @@ body {
     display: block;
 }
 
-.bg{
-    background: url("../img/bg-home.jpg") top / cover no-repeat fixed;
-}
-
-footer{
-    text-align: center;
-}
-
 .container {
     width: 100%;
     max-width: 1140px;
@@ -43,26 +36,36 @@ footer{
     padding: 0 3rem;
 }
 
-a {
-    color: var(--black);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--ocre);
-}
-
-hr {
-    border: none;
-    border-top: 1px solid var(--ocre);
-    margin: 0.2rem 3rem;
-}
-
 .pag-actual {
     font-weight: 700;
 }
-  
-/*header*/
+
+abbr {
+    cursor: help; 
+}
+
+/*****LÍNEAS HORIZONTALES*****/
+h1::after,
+header::after,
+footer::before {
+    content: "";
+    display: block;
+    width: 95%;
+    height: 1px;
+    background-color: var(--ocre); 
+}
+
+h1::after,
+header::after {
+    margin: 1rem auto; 
+}
+
+footer::before {
+    margin: 10.5rem auto 1rem auto;
+}
+
+
+/*****HEADER*****/
 header {
     margin-top: 15px;
 }
@@ -81,7 +84,7 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 2rem 0;
-} /* Navegación horizontal sin viñetas */
+}                          /* Navegación horizontal sin viñetas */
   
 .nav-menu a {
     font-weight: 400;
@@ -134,15 +137,82 @@ h1 {
 }
   
 
-/*index*/
+/*****FOOTER*****/
+footer{
+    text-align: center;
+    color: var(--black);
+}
+
+footer p:last-child{
+    font-size: 13px;
+}
+                             /* Enlaces dentro de los párrafos del footer */
+footer p a {
+    color: var(--red); /* Color normal del enlace (rojo) */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer p a:hover {
+    color: var(--ocre); /* Cambia el color del texto a ocre cuando se hace hover */
+}
+
+
+/*****ENALCES*****/
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--ocre);
+}
+
+
+/*****INDEX.HTML*****/
+.bg{
+    background: url("../img/bg-home.jpg") top / cover no-repeat fixed;
+}
+
 .and::before{
     color: var(--ocre);
     content: '&';
 }
 
+article {
+    padding: auto;
+    margin: 20px;   
+    max-width: 1140px;
+}
+
+/* Si tienes un contenedor en article o main, asegúrate de que tenga un max-width */
+article.container,
+main {
+    margin: 7rem auto; 
+}
+
 #h2-index {
     font-weight: 900;
     font-size: 50px;
-    border-bottom-style: dotted;
+    position: relative; /* Necesario para colocar los puntos con ::before */
+    padding-bottom: 8px; /* Añadido para darle un espacio a los puntos */
+    border-bottom: 8px dotted; /* Cambié el borde para que se vea más grueso */
+    width: 80%; /* Asegurarse de que no llegue hasta el borde */
+    margin: 0 auto;
 }
-  
+
+#p1 {
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+#p2 {
+    font-weight: 400;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+#p1, 
+#p2 {
+    margin-left: 90px;
+}
