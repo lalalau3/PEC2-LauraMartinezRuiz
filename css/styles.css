@@ -26,7 +26,13 @@ body {
     font-family: var(--font);
     text-align: left;
     background-color: var(--beige);
-    display: block;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .container {
@@ -141,6 +147,8 @@ h1 {
 footer{
     text-align: center;
     color: var(--black);
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 
 footer p:last-child{
@@ -178,41 +186,29 @@ a:hover {
     content: '&';
 }
 
-article {
-    padding: auto;
-    margin: 20px;   
-    max-width: 1140px;
-}
-
 /* Si tienes un contenedor en article o main, asegúrate de que tenga un max-width */
-article.container,
-main {
-    margin: 7rem auto; 
+article.container {
+    margin: 8rem auto 0 auto; 
 }
 
 #h2-index {
     font-weight: 900;
-    font-size: 50px;
+    font-size: 70px;
     position: relative; /* Necesario para colocar los puntos con ::before */
     padding-bottom: 8px; /* Añadido para darle un espacio a los puntos */
     border-bottom: 8px dotted; /* Cambié el borde para que se vea más grueso */
-    width: 80%; /* Asegurarse de que no llegue hasta el borde */
     margin: 0 auto;
 }
 
 #p1 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 70px;
     padding-top: 20px;
 }
 
 #p2 {
     font-weight: 400;
-    font-size: 25px;
+    font-size: 35px;
     padding-top: 10px;
 }
 
-#p1, 
-#p2 {
-    margin-left: 90px;
-}
