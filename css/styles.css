@@ -24,6 +24,8 @@
 
 body {
     font-family: var(--font);
+    color: var(--black);
+    font-weight: 400;
     text-align: left;
     background-color: var(--beige);
     display: flex;
@@ -32,7 +34,12 @@ body {
 }
 
 main {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;      /* Asegura que el main ocupe el espacio restante */
+    padding: 0 2rem;   /* Ajusta el espacio interior del main */
+    margin: 0 auto;    /* Centra el main si es necesario */
 }
 
 .container {
@@ -50,10 +57,27 @@ abbr {
     cursor: help; 
 }
 
+.titular-h2 {
+    text-align: center;
+}
+
+.h2 {
+    color: var(--orange);
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.texto-h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
 /*****LÍNEAS HORIZONTALES*****/
 h1::after,
 header::after,
-footer::before {
+footer::before,
+.titular-h2::before {
     content: "";
     display: block;
     width: 95%;
@@ -62,6 +86,9 @@ footer::before {
     margin: 1rem auto;
 }
 
+.titular-h2::before  {
+    height: 0.5px;
+}
 
 
 /*****HEADER*****/
@@ -86,7 +113,6 @@ h1 {
 }                          /* Navegación horizontal sin viñetas */
   
 .nav-menu a {
-    font-weight: 400;
     font-size: 15px;
     text-decoration: none;
     color: var(--black);
@@ -205,3 +231,10 @@ article.container {
     padding-top: 10px;
 }
 
+
+/*****NOSOTROS.HTML*****/
+
+h3 {
+    font-weight: 900;
+    font-size: 47px;
+}
