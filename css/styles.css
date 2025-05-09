@@ -10,7 +10,7 @@
 }
 
 
-/*****GENERAL*****/
+/*GENERAL*/
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +21,7 @@
 *::after {
     box-sizing: border-box;
 }
+
 
 body {
     font-family: var(--font);
@@ -41,6 +42,7 @@ main {
     padding: 0 2rem;   /* Ajusta el espacio interior del main */
     margin: 0 auto;    /* Centra el main si es necesario */
 }
+
 
 .container {
     width: 100%;
@@ -91,7 +93,7 @@ footer::before,
 }
 
 
-/*****HEADER*****/
+/*HEADER*/
 header {
     margin-top: 15px;
 }
@@ -162,7 +164,7 @@ h1 {
 }
   
 
-/*****FOOTER*****/
+/*FOOTER*/
 footer{
     text-align: center;
     color: var(--black);
@@ -184,7 +186,7 @@ footer p a:hover {
 }
 
 
-/*****ENALCES*****/
+/*ENALCES*/
 a {
     color: var(--black);
     text-decoration: none;
@@ -195,7 +197,7 @@ a:hover {
 }
 
 
-/*****INDEX.HTML*****/
+/*INDEX.HTML*/
 .bg{
     background: url("../img/bg-home.jpg") top / cover no-repeat fixed;
 }
@@ -228,7 +230,7 @@ article.container {
 #p2 {
     font-weight: 400;
     font-size: 35px;
-    padding-top: 10px;
+    padding-top: 10px;
 }
 
 
