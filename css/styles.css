@@ -105,7 +105,7 @@ footer::before,
 }
 
 footer::before {
-    margin:1rem auto;
+    margin: 0 auto 1.5rem auto;
 }
 
 /*HEADER*/
@@ -177,14 +177,28 @@ h1 {
     background-color: var(--ocre);
     will-change: transform, width;
 }
-  
+ 
+/* Solo cambiar la altura de la línea vertical en el footer */
+footer .l-vert .nav-menu li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px; /* Ajusta esta altura para hacer la línea más pequeña en el footer */
+    width: 1.5px;
+    background-color: var(--ocre);
+    will-change: transform, width;
+}
+ 
 
 /*FOOTER*/
 footer{
     text-align: center;
     color: var(--black);
-    margin-top: auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 10px;
 }
 
 footer p:last-child{
@@ -208,6 +222,14 @@ a {
 }
 
 a:hover {
+    color: var(--ocre);
+}
+
+address p:last-of-type a {
+    color: var(--red);
+}
+
+address p:last-of-type a:hover {
     color: var(--ocre);
 }
 
@@ -263,7 +285,6 @@ h3 {
 }
 
 main p,
-main address,
 h4,
 div,
 button {
@@ -300,6 +321,39 @@ h4 {
 }
 
 
+.png-bold > li {
+    font-weight: 700; /*para el grosor de la lista larga*/
+}
+
+.png-bold > li > ul > li {
+    font-weight: 400; /*para el segundo li ponerlo en letra normal*/
+}
+
+
+
+/* Para el primer <li> en el <ul> */
+#uno {
+    list-style-image: url('../img/icon-selection.png');
+
+}
+
+#dos {
+    list-style-image: url('../img/icon-review.png'); 
+}
+
+#tres {
+    list-style-image: url('../img/icon-viewing.png'); 
+}
+
+#cuatro {
+    list-style-image: url('../img/icon-debate.png'); 
+}
+
+
+address p {
+    margin-bottom: 0.2rem; /* Ajusta el valor según lo que desees para reducir el espacio */
+    font-style: normal;
+}
 
 
 form {
