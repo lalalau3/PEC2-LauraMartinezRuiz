@@ -43,7 +43,6 @@ main {
     margin: 0 auto;    /* Centra el main si es necesario */
 }
 
-
 .container {
     width: 100%;
     max-width: 1140px;
@@ -67,11 +66,24 @@ abbr {
     color: var(--orange);
     font-size: 45px;
     font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
 }
 
 .texto-h2 {
     font-size: 25px;
     font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.margin {
+    margin: auto 7rem;
+    font-size: 19px;
+    line-height: 22px;
+}
+
+main p {
+    margin-bottom: 1rem; /* Ajusta el valor según el espacio que desees */
 }
 
 
@@ -85,13 +97,16 @@ footer::before,
     width: 95%;
     height: 1px;
     background-color: var(--ocre);
-    margin: 1rem auto;
+    margin: 0.3rem auto;
 }
 
 .titular-h2::before  {
     height: 0.5px;
 }
 
+footer::before {
+    margin:1rem auto;
+}
 
 /*HEADER*/
 header {
@@ -225,12 +240,16 @@ article.container {
     font-weight: 700;
     font-size: 70px;
     padding-top: 20px;
+    position: relative; /* Necesario para colocar los puntos con ::before */
+    margin: 15px auto;
 }
 
 #p2 {
     font-weight: 400;
     font-size: 35px;
     padding-top: 10px;
+    position: relative; /* Necesario para colocar los puntos con ::before */
+    margin: 40px auto;
 }
 
 
@@ -238,5 +257,103 @@ article.container {
 
 h3 {
     font-weight: 900;
-    font-size: 47px;
+    font-size: 38px;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+main p,
+main address,
+h4,
+div,
+button {
+    margin-left: 8rem;
+    line-height: 30px;
+}
+
+section ul li {
+    line-height: 40px;
+}
+
+section ul {
+    list-style-type: square;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+ul li::marker {
+    color: var(--orange); 
+}
+
+.typo {
+    font-size: 19px;
+    margin-bottom: 2rem;
+}
+
+.boletin {
+    margin-top: 3rem;
+    font-size: 14px;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+
+
+
+form {
+    max-width: 650px; 
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-weight: 400;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid var(--black); /* borde negro */
+    background-color: var(--white);
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"]:focus {
+    box-shadow: var(--ocre);
+}
+
+.privacidad {
+    font-size: 12px;
+    color: var(--black);
+}
+
+.privacidad a {
+    color: var(--red); /* el enlace a política de privacidad en rojo */
+    text-decoration: none;
+}
+
+/* Ajustar la checkbox junto al texto */
+#acepto {
+    vertical-align: middle; /* Alinea verticalmente la checkbox con el texto */
+    margin-right: 0.3rem; /* Pequeño espacio entre la checkbox y el texto */
+}
+
+label[for="acepto"] {
+    display: inline; /* Asegura que el texto del label esté en línea con la checkbox */
+    color: var(--black); /* Color del texto */
+    vertical-align: middle; /* Alinea el texto con la checkbox */
+}
+
+
+button[type="submit"] {
+    background-color: var(--red); 
+    color: var(--white);
+    border: none;
+    padding: 3px 8px;
+    font-size: 15px;
+    cursor: pointer;
 }
