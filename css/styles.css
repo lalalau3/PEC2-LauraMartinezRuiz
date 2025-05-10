@@ -357,6 +357,8 @@ address p {
 }
 
 
+
+
 form {
     max-width: 650px; 
     border-radius: 8px;
@@ -417,7 +419,7 @@ button[type="submit"] {
 
 
 .tabla {
-    margin: 0 5rem;
+    margin: 0 10.5rem;
     align-items: center;
 }
 
@@ -431,4 +433,85 @@ thead {
     font-weight: 700;
     line-height: 20px;
     text-align: center;
+}
+
+/* Estilo para los iconos dentro de la clase calendario */
+.calendario::after {
+    content: "";
+    display: inline-block;
+    width: 16px;  /* Tamaño del icono */
+    height: 16px; /* Tamaño del icono */
+    background-image: url('../img/icon-calendar.png'); /* Ruta del icono */
+    background-size: cover; /* Asegura que el icono se ajuste bien */
+    background-repeat: no-repeat; /* Evita que se repita el icono */
+    margin-left: 8px; /* Ajusta la distancia entre el texto y el icono */
+    vertical-align: middle; /* Alinea el icono con el texto */
+}
+
+/* Tabla y celdas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Asegura que las celdas no tengan espacio entre ellas */
+    margin-top: 2rem; /* Espacio arriba de la tabla */
+}
+
+th, td {
+    padding: 12px;  /* Relleno de las celdas para mayor espacio */
+    text-align: left; /* Alineación de texto a la izquierda */
+    border: 1px solid black; /* Línea negra alrededor de cada celda */
+}
+
+thead th {
+    font-size: 16px;
+    font-weight: 700;  /* Resalta el texto del encabezado */
+    text-align: center;
+}
+
+tbody td {
+    font-size: 15px;  /* Ajuste de tamaño de fuente para las celdas */
+}
+
+/* Estilos para el pie de la tabla */
+tfoot td {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    font-style: italic; /* Estilo cursivo para los textos del pie */
+    border-top: 1px solid black; /* Borde superior negro en el pie de la tabla */
+}
+
+/* Resaltado de las celdas */
+td a, cite {
+    font-weight: 700;
+}
+
+/* Estilo para las fechas en la columna de "FECHAS" */
+td .calendario {
+    font-size: 14px;
+    margin-left: 10px; /* Distancia entre texto y el icono */
+}
+
+/* Asegura que las citas en las obras literarias tengan un formato adecuado */
+cite {
+    font-style: italic; /* Cursiva para citas */
+}
+
+/* Espaciado de la tabla en el contenedor */
+.tabla {
+    margin: 2rem 0;
+    overflow-x: auto; /* Añade desbordamiento para pantallas más pequeñas */
+}
+
+/* Resaltar las celdas al pasar el ratón */
+tbody tr:hover {
+    background-color: var(--beige); /* Resalta las filas al pasar el ratón */
+    color: var(--black); /* Color de texto normal cuando se resalta */
+}
+
+/* Definir el ancho de la columna "TEMAS A ANALIZAR" */
+.col-temas {
+    width: 20%; /* Ajusta este valor según el tamaño que desees para la columna */
+}
+.col-adaptacion {
+    width: 20%; /* Ajusta el valor según el tamaño que desees para la columna ADAPTACIÓN CINEMATOGRÁFICA */
 }
